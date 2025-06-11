@@ -4,6 +4,17 @@
 #include <string.h>
 #include <unistd.h>
 
+void chgDir(char* path, char* currDir){
+    if(chddir(path) == -1){
+        printf("Errorr: cannot change directory\n");
+        return;
+    }
+    if((getcwd(currDir, 1000)) == NULL){
+        perror("getcwd() error");
+    }
+    setenv("pwd", currDir, 1); 
+}
+
 int main() {
     char str[1000];
     char currDir[1000];
