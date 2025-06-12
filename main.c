@@ -15,6 +15,14 @@ void chgDir(char* path, char* currDir){
     setenv("pwd", currDir, 1); 
 }
 
+void showpid(int idList[]){
+    int i = 0;
+    for(i=0; i<5; i++){
+        printf("%d\n", idList[i]);
+    }
+    return;
+}
+
 int main() {
     char str[1000];
     char currDir[1000];
