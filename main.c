@@ -78,6 +78,7 @@ int main() {
             // cd
         } else if (strncmp(str, "showpid", 7) == 0) {
             // showpid
+            showpid(idList);
         } else {
             if ((pid = fork()) == 0) {
                 int execStatus = execvp(command, argumentList);
