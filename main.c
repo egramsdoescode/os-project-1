@@ -5,7 +5,7 @@
 #include <unistd.h>
 
 void chgDir(char* path, char* currDir){
-    if(chddir(path) == -1){
+    if(chdir(path) == -1){
         printf("Errorr: cannot change directory\n");
         return;
     }
