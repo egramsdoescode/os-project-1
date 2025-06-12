@@ -72,6 +72,8 @@ int main() {
 
         if (strncmp(str, "exit", 4) == 0) {
             // exit
+            printf("EXITING!\n");
+            break;
         } else if (strncmp(str, "cd", 2) == 0) {
             // cd
         } else if (strncmp(str, "showpid", 7) == 0) {
