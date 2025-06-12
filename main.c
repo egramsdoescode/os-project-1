@@ -4,6 +4,16 @@
 #include <string.h>
 #include <unistd.h>
 
+/*
+The chgDir function changes the user's current working directory to the provided directory
+
+Input: 
+        char* path: a string, the path of the directory to change to
+        char* currDir: a string, the user's current working directory
+    
+Output: there is no return value, but changes the user's current working directory to 
+        the directory provided in the path argument, then sets currDir to the new directory
+*/
 void chgDir(char* path, char* currDir){
     if(chdir(path) == -1){
         printf("Errorr: cannot change directory\n");
@@ -15,6 +25,15 @@ void chgDir(char* path, char* currDir){
     setenv("pwd", currDir, 1); 
 }
 
+/*
+The showpid function prints the last five processes that were ran
+
+Input: 
+        int idList[]: a pointer to an array of integers, the process ID's of the last five processes 
+    
+Output: 
+        there is no return value, but prints the last five processes to standard output 
+*/
 void showpid(int idList[]){
     int i = 0;
     for(i=0; i<5; i++){
