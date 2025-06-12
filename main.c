@@ -76,6 +76,11 @@ int main() {
             break;
         } else if (strncmp(str, "cd", 2) == 0) {
             // cd
+            if(argumentList[1] != NULL) {
+                chgDir(argumentList[1], currDir);
+            } else {
+                printf("Error: No directory specified\n");
+            }
         } else if (strncmp(str, "showpid", 7) == 0) {
             // showpid
             showpid(idList);
