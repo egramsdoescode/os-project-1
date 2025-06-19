@@ -1,23 +1,24 @@
 # Project 1: Implementing a Shell
 
 ### Group Members
-- [Salman Abid](https://github.com/SlummyBoi) 
-- [Ethan Grams](https://github.com/egramsdoescode) 
-- [Matthew Perez](https://github.com/Rex-Perez) 
+- Salman Abid:   fvp216 
+- Ethan Grams:   bib016 
+- Matthew Perez: afk574
 
 ### Files and Directories included in Submission
 -'main.c'    :Source code to implement the shell
 -'Makefile'  :Builds the project and creates the 'project1' executable 
--'README.txt'  :Current File
+-'README.md'  :Current File
 
-### Instructions to Compile the Program:
-$ make
-
-### Instructions to Run the Program:
-./project1
+### Instructions to Compile and Program Run the Program: 
+```bash
+make run
+```
 
 ### Instructions to Clean the Build:
-$ make clean
+```bash
+make clean 
+```
 
 ### Challenges Faced
 - Managing memory properly with strdup() and freeing the tokens after they are used
